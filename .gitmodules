@@ -1,0 +1,3 @@
+[submodule "soundify/soundify"]
+	path = soundify/soundify
+	url = https://github.com/largis21/soundify
