@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="../felles/stil.css" />
+    <link rel="stylesheet" href="./stil.css" />
+    <title>Snake</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <script src="../felles/navbar.js"></script>
+    </div>
+    <div id="game">
+      <canvas id="canvas"></canvas>
+      <div class="controls">
+        <div class="control">
+          <button id="gameStartInput" type="button">
+            <span class="icon">⏵</span> Start
+          </button>
+        </div>
+        <div class="control">
+          <label for="gameSizeInput">Game Size</label>
+          <input
+            id="gameSizeInput"
+            type="range"
+            step="1"
+            value="10"
+            min="1"
+            max="50"
+          />
+          <p id="gameSizeText">10</p>
+        </div>
+        <div class="control">
+          <label for="gameSpeedInput">Game speed</label>
+          <input
+            id="gameSpeedInput"
+            type="range"
+            step="1"
+            value="10"
+            min="1"
+            max="50"
+          />
+          <p id="gameSpeedText">10 fps</p>
+        </div>
+        <div class="control">
+          <label for="pointsPerAppleInput">Points per apple</label>
+          <input
+            id="pointsPerAppleInput"
+            type="range"
+            step="1"
+            value="1"
+            min="1"
+            max="10"
+          />
+          <p id="pointsPerAppleText">1</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

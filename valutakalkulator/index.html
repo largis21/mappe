@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="../felles/stil.css" />
+    <link rel="stylesheet" href="./stil.css" />
+    <title>Valuta</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <script src="../felles/navbar.js"></script>
+    </div>
+    <p>
+      Dette programmet er et verktøy for å regne om norske kroner til
+      <b>Euro, USD og Engelske Pund</b>
+    </p>
+    <div class="content">
+      <div class="omregner">
+        <div class="input">
+          <label for="inputKR">NOK: </label>
+          <input id="inputKR" type="number" />
+
+          <div class="button">
+            <button onclick="convertCurrency()">Konverter</button>
+            <p class="tooltip">Konverter valuta</p>
+          </div>
+        </div>
+
+        <p id="euro_output"></p>
+        <p id="usd_output"></p>
+        <p id="pund_output"></p>
+      </div>
+      <div class="vekslingskurs">
+        <div class="kurs">
+          <label for="euro_kurs">Kurs for Euro:</label>
+          <input id="euro_kurs" type="number" />
+        </div>
+        <div class="kurs">
+          <label for="usd_kurs">Kurs for USD:</label>
+          <input id="usd_kurs" type="number" />
+        </div>
+        <div class="kurs">
+          <label for="pund_kurs">Kurs for Britisk Pund:</label>
+          <input id="pund_kurs" type="number" />
+        </div>
+
+        <div class="button">
+          <button onclick="getExchangeRate()">Oppdater vekslingskurs</button>
+          <p class="tooltip">Oppdater vekslingskursen</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

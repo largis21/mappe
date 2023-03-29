@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  padding: 2rem;
+}
+
+.vekslingskurs {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+
+.kurs {
+  margin-bottom: 1rem;
+}
+.kurs input {
+  width: 100%;
+}
+
+.kurs button {
+  width: 100%;
+}
+
+body {
+  background-color: lightblue;
+  flex-direction: column;
+}
+
+button {
+  margin: 6px 4px 6px 4px;
+  border-radius: 4px;
+  background-color: #e09e50;
+  color: black;
+  min-height: 30px;
+  padding: 5px;
+}
+
+.button {
+  position: relative;
+}
+
+.tooltip {
+  background-color: lightgreen;
+  width: 150px;
+  padding: 5px 5px;
+  transition: opacity 0.8s;
+  position: absolute;
+  margin: 0;
+  opacity: 0;
+  bottom: -50%;
+  border: 2px solid gray;
+  border-radius: 6px;
+}
+
+.button:hover .tooltip {
+  opacity: 1;
+}

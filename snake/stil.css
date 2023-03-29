@@ -1,0 +1,26 @@
+#game {
+  display: flex;
+  flex-direction: row;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  margin: 0.3rem 0 0.3rem 0;
+}
+
+.control input {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+.controls button {
+  height: 3rem;
+}
+
+.icon {
+  font-size: x-large;
+}

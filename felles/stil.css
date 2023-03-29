@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+button {
+  margin: 6px 4px 6px 4px;
+  border-radius: 4px;
+  background-color: #e09e50;
+  color: black;
+  min-height: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.lenke {
+  margin: 6px 4px 6px 4px;
+  border-radius: 4px;
+  background-color: #e09e50;
+  color: black;
+  min-height: 30px;
+  padding: 5px;
+  text-decoration: none;
+  border: 2px solid black;
+}
+
+#navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}

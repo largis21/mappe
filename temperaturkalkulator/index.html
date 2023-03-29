@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="../felles/stil.css" />
+    <link rel="stylesheet" href="./stil.css" />
+    <title>Temperaturkalkulator</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <script src="../felles/navbar.js"></script>
+    </div>
+    <p>Dette programmet er et verktøy for å regne om ulike temperaturenheter</p>
+    <div class="content">
+      <label for="input-tall">Input:</label>
+      <input id="input-tall" type="number" />
+      <select id="input-enhet">
+        <option value="celcius">Celcius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <button id="regn-om-knapp">Regn om</button>
+      <p id="error-tekst"></p>
+      <p id="resultat-tekst"></p>
+    </div>
+  </body>
+</html>

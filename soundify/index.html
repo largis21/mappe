@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../felles/stil.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="navbar">
+    <script src="../felles/navbar.js"></script>
+  </div>
+  <h1>Soundify</h1>
+  <p>For å starte soundify må du først starte backenden, den tillater CORS spørringer fra: </p>
+  <ul>
+    <li>http://localhost:5173</li>
+    <li>https://localhost:5173</li>
+    <li>http://localhost:80</li>
+    <li>https://localhost:80</li>
+    <li>http://localhost:443</li>
+    <li>https://localhost:443</li>
+    <li>http://localhost:5500</li>
+    <li>https://localhost:5500</li>
+  </ul>
+  <p>Da får vi håpe at du kjører fra en av disse. Om ikke kan du legge til addressen i "index.ts" filen.</p>
+  <h2>Oppstart av backend</h2>
+  <ol>
+    <li>Åpne et powershell eller bash vindu</li>
+    <li>Gå til /soundify/backend/ og kjør "npm install && npm start"</li>
+    <li>Det er det samme som å kjøre "node dist/index.ts" som er entrien for å starte api'en</li>
+  </ol>
+  <h2>Oppstart av frontend</h2>
+  <p>Jeg klarte ikke å laste inn bilder som relative lenker, fordi miljøet for utvikling og produksjon er ulik. <br> 
+  Siden jeg ikke vet hvordan produksjons miljøet (din xampp) ser ut, må du starte frontenden i en egen server.
+  </p>
+  <ol>
+    <li>Åpne et powershell eller bash vindu</li>
+    <li>Gå til soundify/app/ og kjør "npm install && npm build && npm start"</li>
+  </ol>
+  <h2>Innlogging</h2>
+  <p>Pga. jeg ikke rakk det, har du ikke mulighet til å lage en ny bruker. Bruk brukernavn "root" og passord "root".</p>
+  <p>Du kan heller ikke lage egne spillelister enda.</p>
+</body>
+</html>

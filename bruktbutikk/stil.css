@@ -1,0 +1,56 @@
+#artikler {
+  display: flex;
+  gap: 2rem;
+}
+
+body > * {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.artikkel {
+  border: 1px solid black;
+  border-radius: 0.5em;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.artikkel input {
+  width: 2rem;
+}
+
+.artikkel h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.kunder {
+  border: 1px solid black;
+  border-radius: 0.5em;
+  padding: 0.2rem;
+  visibility: hidden;
+}
+
+.kunde {
+  border-bottom: 1px solid black;
+}
+
+.produkt {
+  display: flex;
+}
+
+.produkt > * {
+  width: 7rem;
+  border-top: 1px solid gray;
+}
