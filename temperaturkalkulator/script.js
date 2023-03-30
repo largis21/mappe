@@ -7,6 +7,11 @@ const resultatTekst = document.getElementById("resultat-tekst");
 
 regnOmKnapp.onclick = knappTrykket;
 
+document.onkeypress = (e) => {
+  if (e.key !== "Enter") return
+  knappTrykket()
+}
+
 function knappTrykket() {
   setError("");
   if (!inputElement.value) {
@@ -54,3 +59,4 @@ function regnOm(fraEnhet, verdi) {
       return { celcius, fahrenheit };
   }
 }
+
